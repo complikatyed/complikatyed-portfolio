@@ -46,7 +46,6 @@ img {
 }
 
 img.small {
-    vertical-align: middle;
     max-width: 50%;
 }
 
@@ -87,7 +86,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
+h2.name {
+    font-weight: 400;
+    text-align: center;
+    color: $brand-color;
+}
 
 /**
  * Links
@@ -202,7 +205,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $brand-color;
         }
     }
 }
