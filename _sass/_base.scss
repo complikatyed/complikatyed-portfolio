@@ -23,7 +23,21 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+.about_container {
+  @include outer-container;
+}
 
+.about_small_container {
+  display: inline-block;
+  @include span-columns(3);
+  padding-right: 15px;
+}
+
+.about_big_container {
+  display: inline-block;
+  @include span-columns(9);
+  @include omega();
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -49,6 +63,15 @@ img.small {
     max-width: 50%;
 }
 
+img.tiny {
+    max-width: 25%;
+}
+
+img.center {
+    display: inline-block;
+    max-width: 50%;
+    float: right;
+}
 
 /**
  * Figures
