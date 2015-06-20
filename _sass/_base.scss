@@ -30,14 +30,30 @@ body {
 .about_small_container {
   display: inline-block;
   @include span-columns(3);
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 .about_big_container {
-  display: inline-block;
   @include span-columns(9);
   @include omega();
 }
+
+.about_big_container_center {
+  display: block;
+  @include span-columns(9);
+    @include shift(5);
+}
+
+.about_huge_container {
+    @include span-columns(9);
+    @include shift(3);
+}
+
+li.block {
+  @include span-columns(3);
+  @include omega(4n);
+}
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -65,12 +81,17 @@ img.small {
 
 img.tiny {
     max-width: 25%;
+    padding-bottom: 25px;
 }
 
 img.center {
-    display: inline-block;
-    max-width: 50%;
-    float: right;
+    max-width: 75%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+img.projects {
+    max-width: 75%;
 }
 
 /**
@@ -82,9 +103,14 @@ figure > img {
 
 figcaption {
     font-size: $small-font-size;
+    color: $custom-grey-color-light;
+    text-align: right;
 }
 
-
+.subhead {
+    color: $custom-grey-color-light;
+    text-align: center;
+}
 
 /**
  * Lists
@@ -123,11 +149,11 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: lighten($brand-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
+        color: $custom-grey-color;
         text-decoration: underline;
     }
 }
