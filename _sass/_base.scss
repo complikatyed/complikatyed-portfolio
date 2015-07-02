@@ -3,12 +3,10 @@
  */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, figure {
     margin: 0;
     padding: 0;
 }
-
-
 
 /**
  * Basic styling
@@ -37,17 +35,14 @@ body {
   @include span-columns(9);
   @include omega();
 
-  ul {
-    max-width: 60%;
-  }
   li {
-    max-width: 55%;
+    display: list-item;
+    padding-bottom: 5px;
+    width: 99%;
   }
-
 }
 
 .about_big_container_center {
-  display: block;
   @include span-columns(9);
     @include shift(5);
 }
@@ -114,10 +109,6 @@ figcaption {
     color: $custom-grey-color-light;
     text-align: center;
 }
-
-/**
- * Lists
- */
 
 
 
