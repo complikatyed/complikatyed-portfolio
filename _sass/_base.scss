@@ -36,6 +36,10 @@ body {
 .about_big_container {
   @include span-columns(9);
   @include omega();
+
+  ul {
+    margin-left: 5px;
+  }
 }
 
 .about_big_container_center {
