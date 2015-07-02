@@ -38,8 +38,12 @@ body {
   @include omega();
 
   ul {
-    margin-left: 5px;
+    max-width: 60%;
   }
+  li {
+    max-width: 55%;
+  }
+
 }
 
 .about_big_container_center {
